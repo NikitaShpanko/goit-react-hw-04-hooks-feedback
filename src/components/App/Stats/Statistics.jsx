@@ -1,10 +1,10 @@
-function Statistics({ data }) {
+function Statistics({ title, stats }) {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
-        {data.map(({ id, label, percentage }) => (
+        {stats.map(({ id, label, percentage }) => (
           <li className="item" key={id}>
             <span className="label">{label}</span>
             <span className="percentage">{percentage}</span>

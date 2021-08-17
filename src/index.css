@@ -11,6 +11,11 @@ li {
   list-style: none;
 }
 
+#root {
+  display: flex;
+  justify-content: space-between;
+}
+
 .label {
   min-width: 75px;
   display: inline-block;

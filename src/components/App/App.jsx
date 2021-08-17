@@ -12,10 +12,16 @@ import TransactionHistory from "./TransactionHistory/TransactionHistory";
 function App() {
   return (
     <>
-      <Profile data={user} />
-      <Statistics data={stats} />
-      <FriendList data={friends} />
-      <TransactionHistory data={transactions} />
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={stats} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }

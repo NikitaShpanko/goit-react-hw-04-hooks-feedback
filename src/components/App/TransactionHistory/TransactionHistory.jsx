@@ -1,6 +1,6 @@
 import titleCase from "../../../js/titleCase";
 
-function TransactionHistory({ data }) {
+function TransactionHistory({ items }) {
   return (
     <table class="transaction-history">
       <thead>
@@ -12,7 +12,7 @@ function TransactionHistory({ data }) {
       </thead>
 
       <tbody>
-        {data.map(({ id, type, amount, currency }) => (
+        {items.map(({ id, type, amount, currency }) => (
           <tr key={id}>
             <td>{titleCase(type)}</td>
             <td>{amount}</td>
