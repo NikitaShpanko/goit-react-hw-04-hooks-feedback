@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import titleCase from "../../../js/titleCase";
 
 function Profile({ avatar, name, tag, location, stats }) {
@@ -21,5 +23,13 @@ function Profile({ avatar, name, tag, location, stats }) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
 
 export default Profile;

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import titleCase from "../../../js/titleCase";
 
 function TransactionHistory({ items }) {
@@ -23,5 +25,16 @@ function TransactionHistory({ items }) {
     </table>
   );
 }
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      type: PropTypes.string,
+      amount: PropTypes.string,
+      currency: PropTypes.string,
+    })
+  ),
+};
 
 export default TransactionHistory;

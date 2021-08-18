@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Statistics({ title, stats }) {
   return (
     <section className="statistics">
@@ -14,5 +16,16 @@ function Statistics({ title, stats }) {
     </section>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
+};
 
 export default Statistics;
