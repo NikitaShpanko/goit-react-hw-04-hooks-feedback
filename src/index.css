@@ -14,16 +14,7 @@ li {
 #root {
   display: flex;
   justify-content: space-between;
-}
-
-.label {
-  min-width: 75px;
-  display: inline-block;
-}
-
-.profile .avatar {
-  width: 200px;
-  border-radius: 50%;
+  font-size: 18px;
 }
 
 /* body {

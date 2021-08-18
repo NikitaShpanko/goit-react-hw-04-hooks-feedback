@@ -1,0 +1,9 @@
+.statistics {
+  text-align: center;
+}
+
+.label {
+  min-width: 75px;
+  text-align: left;
+  display: inline-block;
+}

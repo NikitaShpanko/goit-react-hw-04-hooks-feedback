@@ -1,22 +1,22 @@
 import PropTypes from "prop-types";
-
 import titleCase from "../../../js/titleCase";
+import css from "./Profile.module.css";
 
 function Profile({ avatar, name, tag, location, stats }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="Аватар пользователя" className="avatar" />
-        <p className="name">{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="Аватар пользователя" className={css.avatar} />
+        <p className={css.name}>{name}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={css.stats}>
         {Object.entries(stats).map(([label, quantity]) => (
           <li key={label}>
-            <span className="label">{titleCase(label)}</span>
-            <span className="quantity">{quantity}</span>
+            <span className={css.label}>{titleCase(label)}</span>
+            <span className={css.quantity}>{quantity}</span>
           </li>
         ))}
       </ul>

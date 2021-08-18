@@ -1,0 +1,18 @@
+.profile {
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.label {
+  min-width: 80px;
+  text-align: left;
+  display: inline-block;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+}
