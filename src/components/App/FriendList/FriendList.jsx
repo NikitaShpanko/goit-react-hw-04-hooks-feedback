@@ -1,3 +1,5 @@
+import PropTypes, { arrayOf } from "prop-types";
+
 import FriendListItem from "./FriendListItem/FriendListItem";
 
 function FriendList({ friends }) {
@@ -8,11 +10,15 @@ function FriendList({ friends }) {
           avatar={avatar}
           name={name}
           isOnline={isOnline}
-          id={id}
+          key={id}
         />
       ))}
     </ul>
   );
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(FriendListItem), //????
+};
 
 export default FriendList;
