@@ -1,6 +1,10 @@
 .item {
   display: flex;
   align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #777777;
+  background-color: white;
 }
 
 .item:not(:last-child) {
@@ -22,5 +26,9 @@
 .avatar {
   width: 48px;
   margin-left: 20px;
+  margin-right: 20px;
+}
+
+.name {
   margin-right: 20px;
 }

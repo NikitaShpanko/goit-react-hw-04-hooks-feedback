@@ -16,7 +16,9 @@ function Profile({ avatar, name, tag, location, stats }) {
         {Object.entries(stats).map(([label, quantity]) => (
           <li key={label}>
             <span className={css.label}>{titleCase(label)}</span>
-            <span className={css.quantity}>{quantity}</span>
+            <span className={css.quantity}>
+              {quantity.toLocaleString("en-US")}
+            </span>
           </li>
         ))}
       </ul>
