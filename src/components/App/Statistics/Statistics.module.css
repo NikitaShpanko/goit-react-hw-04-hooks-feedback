@@ -1,0 +1,19 @@
+.statistics {
+  text-align: center;
+  background-color: white;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.25;
+}
+
+.statList {
+  display: flex;
+  color: white;
+}

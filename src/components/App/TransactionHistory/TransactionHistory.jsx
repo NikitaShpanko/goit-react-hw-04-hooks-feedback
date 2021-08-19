@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import titleCase from "../../../js/titleCase";
+import TransactionItem from "./TransactionItem/TransactionItem";
 import css from "./TransactionHistory.module.css";
 
 function TransactionHistory({ items }) {
@@ -15,11 +15,12 @@ function TransactionHistory({ items }) {
 
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
-            <td>{titleCase(type)}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
-          </tr>
+          <TransactionItem
+            key={id}
+            type={type}
+            amount={amount}
+            currency={currency}
+          />
         ))}
       </tbody>
     </table>
