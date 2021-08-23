@@ -1,0 +1,21 @@
+.button {
+  font-size: 75%;
+  font-weight: bold;
+  padding: 2px 10px;
+  border: 1px solid #c3c3c3;
+  border-radius: 6px;
+  text-transform: capitalize;
+  background: none;
+}
+
+.button:hover {
+  background: linear-gradient(#4594fd, #0e6ce8);
+}
+
+.button:active {
+  border: 2px solid black;
+}
+
+.button:not(:last-child) {
+  margin-right: 5px;
+}

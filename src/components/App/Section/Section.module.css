@@ -1,11 +1,13 @@
-.section {
-  background-color: aqua;
+.section:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .title {
-  color: darkblue;
+  margin: 0;
+  font-size: 150%;
+  line-height: 2;
 }
 
 .content {
-  background-color: darkcyan;
+  line-height: 1.5;
 }
